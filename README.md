@@ -891,3 +891,116 @@ rf_without_smote_results.csv	RF without SMOTE experiment results
 5. Improved churn detection recall significantly
 6. Identified the best-performing model
 7. Learned importance of recall over accuracy in churn prediction
+
+
+# Customer Churn Prediction & LTV Engine
+# Day 5 Progress Report — Feature Importance, Explainable AI & Model Comparison
+# 📌 Objective of Day 5
+
+Day 5 focused on understanding why the model predicts customer churn.
+The goal was not only to build a predictive model, but also to explain the major factors influencing churn and convert model results into business recommendations.
+
+# ✅ Work Completed
+# 1. Feature Importance Analysis
+
+Used the best-performing model:-
+Random Forest + SMOTE
+to identify the most important churn-driving features.
+
+# Top 10 Important Features
+Rank	Feature	Importance
+1	MonthlyCharges	0.139
+2	tenure	0.136
+3	TotalCharges	0.134
+4	Contract	0.113
+5	OnlineSecurity	0.058
+6	TechSupport	0.058
+7	PaymentMethod	0.044
+8	Tenure_Group	0.031
+9	DeviceProtection	0.026
+10	OnlineBackup	0.026
+
+# 📌 Key Business Insights
+1. Monthly Charges
+Customers paying higher monthly charges are more likely to churn.
+# Recommendation:
+Offer premium retention discounts, bundle offers, and loyalty benefits.
+
+
+3. Tenure
+Short-tenure customers are highly churn-prone.
+# Recommendation:
+Improve onboarding experience and run first-year retention campaigns.
+
+
+3. Total Charges
+Lifetime customer spending is strongly linked with retention behavior.
+# Recommendation:
+Identify high-value customers early and protect them with priority retention offers.
+
+
+4. Contract Type
+Month-to-month contracts remain one of the strongest churn indicators.
+# Recommendation:
+Promote one-year and two-year plans through discounts and incentives.
+
+
+5. Online Security & Tech Support
+Customers without support/security services show higher churn tendency.
+# Recommendation:
+Bundle support and security services with premium plans.
+
+
+6. Payment Method
+Payment behavior contributes to churn risk.
+# Recommendation:
+Encourage automatic payment methods and reduce payment friction.
+
+
+# 2. Model Comparison
+Compared all completed machine learning experiments.
+
+# Model	Accuracy	Precision	Recall	F1 Score
+1. Logistic Regression	0.786	0.632	0.473	0.541
+2. Logistic + SMOTE	0.793	0.765	0.846	0.803
+3. Random Forest	0.785	0.630	0.465	0.535
+4. Random Forest + SMOTE	0.836	0.822	0.856	0.839
+
+# 🏆 Best Performing Model
+Random Forest + SMOTE
+# Why it was selected
+Highest accuracy: 83.6%
+Highest recall: 85.6%
+Highest F1-score: 83.9%
+Best balance between churn detection and prediction reliability
+
+# 📌 Major ML Learning
+The comparison proved that:-
+
+Class imbalance was the primary bottleneck.
+Without SMOTE, both Logistic Regression and Random Forest showed poor churn recall.
+After SMOTE, recall improved dramatically.
+
+# 📌 Business Impact
+The final model can help the business:-
+
+1. detect churn-risk customers early
+2. reduce revenue loss
+3. improve retention campaigns
+4. prioritize high-risk customer segments
+5. support customer lifetime value strategy
+
+# 📁 Files Generated
+# File	Purpose
+1. feature_importance_results.csv	Stores feature importance ranking
+2. model_comparison_results.csv	Stores all model comparison metrics
+
+# 🛠️ Tools & Libraries Used
+1. Python
+2. Pandas
+3. NumPy
+4. Scikit-learn
+5. Random Forest
+6. Matplotlib
+7. Seaborn
+8. Jupyter Notebook
