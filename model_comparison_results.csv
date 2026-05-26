@@ -1,0 +1,5 @@
+Model,Accuracy,Precision,Recall,F1 Score
+Logistic Regression,0.786,0.632,0.473,0.541
+Logistic + SMOTE,0.793,0.765,0.846,0.803
+Random Forest,0.785,0.63,0.465,0.535
+Random Forest + SMOTE,0.836,0.822,0.856,0.839
