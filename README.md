@@ -1004,3 +1004,143 @@ The final model can help the business:-
 6. Matplotlib
 7. Seaborn
 8. Jupyter Notebook
+
+
+# Customer Churn Prediction & LTV Engine
+# Day 6 Progress Report — XGBoost Modeling & Final Master Model Comparison
+# 📌 Objective of Day 6
+
+Day 6 focused on testing an advanced machine learning algorithm, XGBoost, and comparing it with previous models to finalize the best churn prediction model.
+
+# The main goals were:
+1. Train XGBoost without SMOTE
+2. Train XGBoost with SMOTE
+3. Compare XGBoost with Logistic Regression and Random Forest
+4. Build final master model comparison
+5. Select the best production-ready model
+
+
+# ✅ Work Completed
+# 1. XGBoost Without SMOTE
+XGBoost was first trained on the original imbalanced ML-ready dataset.
+
+# Performance
+Metric	Score
+1. Accuracy	0.783
+2. Precision	0.617
+3. Recall	0.487
+4. F1 Score	0.544
+
+# Confusion Matrix Summary
+# Prediction Type	Count
+1. Correct No-Churn Predictions	920
+2. Correct Churn Predictions	182
+3. False Positives	113
+4. False Negatives	192
+
+# Key Insight
+Even an advanced boosting algorithm struggled on the imbalanced dataset.
+This confirmed again that class imbalance was the major bottleneck, not just model selection.
+
+
+# 2. XGBoost With SMOTE
+XGBoost was then trained on the SMOTE-balanced dataset.
+
+# Performance
+# Metric	Score
+1. Accuracy	0.809
+2. Precision	0.780
+3. Recall	0.859
+4. F1 Score	0.818
+
+# Confusion Matrix Summary
+# Prediction Type	Count
+1. Correct No-Churn Predictions	788
+2. Correct Churn Predictions	884
+3. False Positives	249
+4. False Negatives	145
+
+# Key Insight
+After applying SMOTE, XGBoost recall improved significantly from 48.7% to 85.9%.
+This means the model became much better at identifying customers likely to churn.
+
+
+# 3. Final Master Model Comparison
+All six completed experiments were compared together.
+
+# Model	Accuracy	Precision	Recall	F1 Score
+1. Logistic Regression	0.786	0.632	0.473	0.541
+2. Logistic + SMOTE	0.793	0.765	0.846	0.803
+3. Random Forest	0.785	0.630	0.465	0.535
+4. Random Forest + SMOTE	0.836	0.822	0.856	0.839
+5. XGBoost	0.783	0.617	0.486	0.544
+6. XGBoost + SMOTE	0.809	0.780	0.859	0.817
+
+# 🏆 Final Best Model
+Random Forest + SMOTE
+
+# Final Best Model Performance
+# Metric	Score
+1. Accuracy	0.836
+2. Precision	0.822
+3. Recall	0.856
+4. F1 Score	0.839
+
+# 📌 Why Random Forest + SMOTE Was Selected
+Although XGBoost + SMOTE achieved slightly higher recall, Random Forest + SMOTE was selected as the best overall model because it had:-
+
+1. highest accuracy
+2. highest precision
+3. highest F1-score
+4. strong recall
+5. best overall balance between churn detection and false alarms
+
+# 📌 Major Machine Learning Conclusion
+The complete experiment proved that:-
+Class imbalance was the primary performance bottleneck.
+
+Without SMOTE, all three algorithms had weak recall:
+
+# Model	Recall Without SMOTE
+1. Logistic Regression	0.473
+2. Random Forest	0.465
+3. XGBoost	0.486
+
+After SMOTE, recall improved strongly across all models:
+
+# Model	Recall With SMOTE
+1. Logistic + SMOTE	0.846
+2. Random Forest + SMOTE	0.856
+3. XGBoost + SMOTE	0.859
+
+# 📌 Business Impact
+The final model can help the business:-
+
+1. identify churn-risk customers early
+2. reduce missed churn cases
+3. prioritize high-risk customers for retention campaigns
+4. improve customer lifetime value
+5. support data-driven marketing strategies
+
+# 📌 Final Analytical Insights
+1. Accuracy alone was not enough for churn prediction.
+2. Recall and F1-score were more important because missing churn customers causes revenue loss.
+3. SMOTE significantly improved minority class detection.
+4. Random Forest + SMOTE provided the most balanced production-ready performance.
+5. XGBoost + SMOTE was useful when maximum churn detection recall is the priority.
+
+# 📁 Files Generated During Day 6
+# File	Purpose
+1. xgb_without_smote_results.csv	XGBoost without SMOTE experiment results
+2. xgb_smote_results.csv	XGBoost with SMOTE experiment results
+3. final_master_model_comparison.csv	Final comparison of all six ML experiments
+
+# 🛠️ Tools & Libraries Used
+1. Python
+2. Pandas
+3. NumPy
+4. Scikit-learn
+5. XGBoost
+6. Matplotlib
+7. Seaborn
+8. Jupyter Notebook
