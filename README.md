@@ -1144,3 +1144,174 @@ The final model can help the business:-
 6. Matplotlib
 7. Seaborn
 8. Jupyter Notebook
+
+
+# Customer Churn Prediction & LTV Engine
+# 🚀 Day 7 — Power BI Dashboarding & Business Intelligence Layer
+# 📌 Project Phase Overview
+
+Day 7 focused on transforming the cleaned telecom churn dataset, machine learning outputs, and LTV analysis into a complete interactive Business Intelligence solution using Power BI.
+
+The objective was to convert analytical findings into executive-level dashboards capable of supporting real-world business decision-making for telecom customer retention, churn reduction, revenue optimization, and customer segmentation.
+
+# 🚀 Power BI Dashboards Developed
+# ✅ Dashboard 1 — Executive Overview Dashboard
+# Objective
+
+Provide a high-level summary of overall business performance, churn status, customer base distribution, and revenue intelligence.
+
+# Key Components
+1. Total Customers KPI
+2. Churned Customers KPI
+3. Churn Rate KPI
+4. Average Customer LTV KPI
+5. Total Estimated Lifetime Revenue KPI
+6. Customer Churn Distribution Donut Chart
+7. Contract Type Distribution Analysis
+8. Customer LTV Segment Distribution
+9. Interactive Business Slicers
+
+# Business Insights
+1. Overall churn rate reached 26.58%
+2. Month-to-month contracts dominate the customer base
+3. Total customer lifetime revenue exceeded 16M+
+4. Customer segments were evenly distributed across value tiers
+
+
+# 🚀 Dashboard 2 — Customer Churn Intelligence Dashboard
+# Objective
+
+Identify customer groups most likely to churn and discover major churn-driving business factors.
+
+# Key Components
+1. High-Risk Customer KPI
+2. Churn by Contract Type
+3. Churn by Internet Service
+4. Churn by Senior Citizen Status
+5. Churn by Payment Method
+6. Churn Trend by Tenure
+7. Customer Retention Distribution
+8. Interactive Filters & Slicers
+
+# Business Insights
+1. Month-to-month customers showed highest churn risk
+2. Fiber optic customers displayed elevated churn tendency
+3. Electronic check users had highest churn behavior
+4. Senior citizens demonstrated higher churn sensitivity
+5. Long-term customers showed significantly lower churn probability
+
+
+# 🚀 Dashboard 3 — LTV & Revenue Intelligence Dashboard
+# Objective
+
+Analyze customer lifetime value patterns and identify the most profitable customer segments.
+
+# Key Components
+1. Total Customer Lifetime Revenue KPI
+2. Premium Segment Revenue KPI
+3. Premium Customer Count KPI
+4. Average Monthly Revenue KPI
+5. Average Customer LTV KPI
+6. Revenue Growth by Customer Tenure
+7. Revenue by Contract Type
+8. LTV Segment Distribution
+9. Churn Distribution Across LTV Segments
+
+# Business Insights
+1. Premium customer segment generated highest business revenue
+2. Two-year contract customers produced strongest revenue stability
+3. Customer revenue increased significantly with tenure growth
+4. High-value customers demonstrated lower churn behavior
+5. Premium segment revenue exceeded 10M+
+
+
+# 🚀 Dashboard 4 — ML Model Performance & Feature Importance Dashboard
+# Objective
+
+Compare machine learning model performance and visualize the strongest churn-driving features.
+
+# Models Evaluated
+1. Logistic Regression
+2. Logistic Regression + SMOTE
+3. Random Forest
+4. Random Forest + SMOTE
+5. XGBoost
+6. XGBoost + SMOTE
+
+# Key Components
+1. Best Model Accuracy KPI
+2. Best Model Precision KPI
+3. Best Model Recall KPI
+4. Best Model F1 Score KPI
+5. Total Models Evaluated KPI
+6. Final Model Comparison Visualization
+7. Recall Score Comparison
+8. Top Churn Drivers Visualization
+9. Feature Importance Analysis
+
+# Final ML Results
+# Model	Accuracy	F1 Score
+1. Random Forest + SMOTE	83.6%	83.9%
+2. XGBoost + SMOTE	80.9%	81.7%
+3. Logistic + SMOTE	79.3%	80.3%
+
+# Key ML Insights
+1. SMOTE balancing significantly improved recall performance
+2. Random Forest + SMOTE achieved best overall results
+3. MonthlyCharges, tenure, TotalCharges, and Contract were top churn-driving features
+4. ML feature importance aligned strongly with business dashboard insights
+
+# 🚀 Advanced Features Implemented
+# ✅ DAX Measures
+Custom DAX measures were created for:-
+1. Churn Rate
+2. Total Estimated LTV
+3. Premium Segment Revenue
+4. Average LTV
+5. High-Risk Customers
+6. Premium Customers
+7. Revenue KPIs
+
+# 🚀 Interactive Dashboard Features
+# Implemented Functionality
+1. Cross-filtering
+2. Dynamic slicers
+3. Segment filtering
+4. Contract-based filtering
+5. Internet service filtering
+6. Payment method filtering
+7. LTV segment filtering
+
+# 🚀 Business Impact of the Solution
+The final Business Intelligence ecosystem enables telecom businesses to:-
+1. Predict customer churn risk
+2. Identify high-value customers
+3. Optimize retention campaigns
+4. Reduce customer acquisition cost
+5. Improve long-term customer profitability
+6. Monitor revenue concentration patterns
+7. Support executive-level decision-making
+
+# 🚀 Used Files & Assets Saved
+# Cleaned Dataset Files
+1. powerbi_customer_churn_dataset.csv
+2. Telco_customer_churn_cleaned.csv
+
+# ML Performance Files
+1. final_master_model_comparison.csv
+2. feature_importance_results.csv
+
+# Power BI Deliverables
+1. Executive Overview Dashboard
+2. Churn Intelligence Dashboard
+3. LTV & Revenue Intelligence Dashboard
+4. ML Performance Dashboard
+
+
+# 🚀 Final Project Storytelling Summary
+1. This project evolved from raw telecom customer data into a complete end-to-end business intelligence and predictive analytics ecosystem.
+
+2. Using machine learning, customer segmentation, churn analysis, lifetime value estimation, and interactive Power BI dashboards, the solution identified high-risk customers, premium revenue segments, and the strongest churn-driving business factors.
+
+3. The final system enables telecom organizations to make data-driven retention decisions, improve customer loyalty, optimize lifetime revenue, and proactively reduce churn through advanced analytics and executive-level dashboard reporting.
+
