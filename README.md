@@ -175,6 +175,8 @@ Current responsibilities completed:
 7. Business observation extraction
 
 
+
+# Customer Churn Prediction & LTV Engine
 # Day 2 Progress Report — Exploratory Data Analysis (EDA) & Business Insights
 # 📌 Objective of Day 2
 
@@ -1308,10 +1310,131 @@ The final Business Intelligence ecosystem enables telecom businesses to:-
 4. ML Performance Dashboard
 
 
-# 🚀 Final Project Storytelling Summary
-1. This project evolved from raw telecom customer data into a complete end-to-end business intelligence and predictive analytics ecosystem.
 
-2. Using machine learning, customer segmentation, churn analysis, lifetime value estimation, and interactive Power BI dashboards, the solution identified high-risk customers, premium revenue segments, and the strongest churn-driving business factors.
+# Customer Churn Prediction & LTV Engine
+# 🚀 Day 8 — FastAPI Integration & API Development
+# 📌 Project Phase Overview
+Day 9 focused on adding a lightweight API layer to the Telecom Customer Churn Analytics system using FastAPI.
 
-3. The final system enables telecom organizations to make data-driven retention decisions, improve customer loyalty, optimize lifetime revenue, and proactively reduce churn through advanced analytics and executive-level dashboard reporting.
+The objective of this phase was not deep backend engineering, but rather creating a simple and business-usable API service capable of exposing churn prediction logic and customer lifetime value estimation through REST endpoints.
+This phase transformed the project from a notebook-based analytics solution into a more realistic end-to-end analytics application.
 
+
+# 🚀 Technology Stack Used
+# Backend Framework
+FastAPI
+
+# Development Environment
+PyCharm
+
+# Supporting Libraries
+1. Uvicorn
+2. Pandas
+3. NumPy
+4. Scikit-learn
+5. Joblib
+
+
+# 🚀 API Endpoints Developed
+#  Endpoint 1 — Home Route
+# Route
+GET /
+
+# Purpose
+Verify whether the API server is running successfully.
+
+# Response Example
+{
+  "message": "Customer Churn Prediction API is Running Successfully"
+}
+
+
+# 🚀 Endpoint 2 — Churn Prediction API
+# Route
+GET /predict
+
+# Inputs
+1. tenure
+2. monthly_charges
+
+# Prediction Logic
+Basic churn-risk logic was implemented using:-
+1. customer tenure
+2. monthly charges
+
+# Business Rule
+
+Customers with:-
+1. low tenure
+2. high monthly charges
+were categorized as:-
+High Churn Risk
+
+
+# 🚀 LTV Estimation Added
+The API also returns:-
+1. estimated customer lifetime value (LTV)
+# Formula Used
+Estimated_LTV = tenure × monthly_charges
+
+
+# 🚀 API Response Example
+{
+  "tenure": 5,
+  "monthly_charges": 95,
+  "prediction": "High Churn Risk",
+  "estimated_ltv": 475
+}
+
+
+# 🚀 Swagger UI Integration
+One of FastAPI’s strongest features is automatic API documentation.
+
+# Swagger Endpoint
+http://127.0.0.1:8000/docs
+
+# Using Swagger UI:-
+1. API endpoints were tested
+2. input parameters were validated
+3. prediction responses were verified in real time
+
+
+# 🚀 Key Achievements
+1. Successfully built first working FastAPI application
+2. Created REST API endpoints for:
+-----customer churn prediction
+-----customer LTV estimation
+3. Implemented dynamic input handling
+4. Successfully tested APIs using Swagger documentation UI
+5. Converted notebook-based analytics into a usable business service
+6. Created beginner-friendly analyst-level API architecture
+
+
+# 🚀 Business Value of API Layer
+The API layer enables churn analytics to move beyond static dashboards and notebooks.
+Potential business use cases include:-
+1. real-time customer churn checks
+2. CRM integration
+3. customer retention systems
+4. customer service tools
+5. telecom support applications
+
+
+# 🚀 Files & Deliverables Created
+# API Files
+1. app.py
+2. requirements.txt
+
+# API Features
+1. FastAPI setup
+2. Swagger UI integration
+3. Churn prediction endpoint
+4. LTV estimation endpoint
+
+
+# 🚀 Final Business Storytelling
+The project successfully evolved from raw telecom customer data into a complete end-to-end analytics ecosystem.
+
+Using machine learning, customer segmentation, churn analysis, lifetime value modeling, Power BI dashboards, and FastAPI integration, the solution now supports both business intelligence reporting and real-time customer risk analysis.
+
+The final system demonstrates how analytics solutions can move from notebooks into operational business services capable of supporting customer retention strategies and data-driven decision-making.
