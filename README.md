@@ -1157,74 +1157,89 @@ Day 7 focused on transforming the cleaned telecom churn dataset, machine learnin
 The objective was to convert analytical findings into executive-level dashboards capable of supporting real-world business decision-making for telecom customer retention, churn reduction, revenue optimization, and customer segmentation.
 
 # 🚀 Power BI Dashboards Developed
-# ✅ Dashboard 1 — Executive Overview Dashboard
+# ✅ Dashboard 1 — Executive Summary Dashboard
 # Objective
 
 Provide a high-level summary of overall business performance, churn status, customer base distribution, and revenue intelligence.
 
-# Key Components
-1. Total Customers KPI
-2. Churned Customers KPI
-3. Churn Rate KPI
-4. Average Customer LTV KPI
-5. Total Estimated Lifetime Revenue KPI
-6. Customer Churn Distribution Donut Chart
-7. Contract Type Distribution Analysis
-8. Customer LTV Segment Distribution
-9. Interactive Business Slicers
+# KPIs
+1. Total Customers
+2. Churn Customers
+3. Churn Rate %
+4. Total Revenue
+5. Average Monthly Charges
+   
+# Visualizations
+1. Customer Churn Distribution
+2. Churn by Contract Type
+3. Churn by Internet Service
+4. Churn by Payment Method
 
-# Business Insights
-1. Overall churn rate reached 26.58%
-2. Month-to-month contracts dominate the customer base
-3. Total customer lifetime revenue exceeded 16M+
-4. Customer segments were evenly distributed across value tiers
+# Key Insights
+1. Overall churn rate is 26.58%.
+2. Month-to-month customers show the highest churn.
+3. Fiber optic users churn more than other service groups.
+4. Electronic check users have the highest churn count.
+5. Long-term contracts help reduce churn significantly.
 
 
-# 🚀 Dashboard 2 — Customer Churn Intelligence Dashboard
+# 🚀 Dashboard 2 — Customer Insights Dashboard
 # Objective
 
 Identify customer groups most likely to churn and discover major churn-driving business factors.
 
-# Key Components
-1. High-Risk Customer KPI
-2. Churn by Contract Type
-3. Churn by Internet Service
-4. Churn by Senior Citizen Status
-5. Churn by Payment Method
-6. Churn Trend by Tenure
-7. Customer Retention Distribution
-8. Interactive Filters & Slicers
+# KPIs
+1. Total Customers
+2. Churn Customers
+3. Churn Rate %
+4. High Risk Customers
 
-# Business Insights
-1. Month-to-month customers showed highest churn risk
-2. Fiber optic customers displayed elevated churn tendency
-3. Electronic check users had highest churn behavior
-4. Senior citizens demonstrated higher churn sensitivity
-5. Long-term customers showed significantly lower churn probability
+# Visualizations
+1. Churn by Gender
+2. Churn by Senior Citizen
+3. Churn by Tenure Group
+4. Churn by Dependents
+5. Churn by Online Security
+6. Churn by Tech Support
+
+# Key Insights
+1. Churn is similar across male and female customers.
+2. Senior citizens show higher churn risk.
+3. New customers churn more frequently than long-term customers.
+4. Customers without online security are more likely to churn.
+5. Customers without tech support have significantly higher churn.
 
 
-# 🚀 Dashboard 3 — LTV & Revenue Intelligence Dashboard
+# 🚀 Dashboard 3 — Customer Value & Segmentation Analysis Dashboard
 # Objective
 
 Analyze customer lifetime value patterns and identify the most profitable customer segments.
 
-# Key Components
-1. Total Customer Lifetime Revenue KPI
-2. Premium Segment Revenue KPI
-3. Premium Customer Count KPI
-4. Average Monthly Revenue KPI
-5. Average Customer LTV KPI
-6. Revenue Growth by Customer Tenure
-7. Revenue by Contract Type
-8. LTV Segment Distribution
-9. Churn Distribution Across LTV Segments
+# KPIs
+1. Total Customers
+2. Total Revenue
+3. Average Revenue per Customer
+4. Average Tenure
 
-# Business Insights
-1. Premium customer segment generated highest business revenue
-2. Two-year contract customers produced strongest revenue stability
-3. Customer revenue increased significantly with tenure growth
-4. High-value customers demonstrated lower churn behavior
-5. Premium segment revenue exceeded 10M+
+# Customer Segments
+1. Premium Value
+2. High Value
+3. Medium Value
+4. Low Value
+
+# Visualizations
+1. Customer Distribution by Value Segment
+2. Revenue by Customer Segment
+3. Customer Churn by Value Segment
+4. Average Tenure by Segment
+5. Average Monthly Charges by Segment
+
+# Key Insights
+1. Premium customers generate the highest revenue.
+2. Premium customers have the longest average tenure.
+3. Low-value customers show the highest relative churn risk.
+4. Revenue is concentrated among premium and high-value customers.
+5. Customer segmentation helps prioritize retention strategies.
 
 
 # 🚀 Dashboard 4 — ML Model Performance & Feature Importance Dashboard
@@ -1552,3 +1567,10 @@ This significantly improved project reliability and business credibility.
 Data Engineering + Machine Learning + SQL Analytics + Business Intelligence + API Integration
 into a complete production-style analytics project.
 
+
+📊 Telco Customer Churn Analysis Dashboard
+📌 Project Overview
+
+This project analyzes customer churn behavior in a telecommunications company using Power BI. The objective is to identify churn patterns, understand customer segments, and provide actionable business insights to improve customer retention and revenue growth.
+
+The project includes interactive dashboards, KPI tracking, customer segmentation analysis, and churn trend visualization.
