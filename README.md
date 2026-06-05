@@ -1242,41 +1242,60 @@ Analyze customer lifetime value patterns and identify the most profitable custom
 5. Customer segmentation helps prioritize retention strategies.
 
 
-# 🚀 Dashboard 4 — ML Model Performance & Feature Importance Dashboard
-# Objective
+# 🚀 Dashboard 4 – ML Model Performance & Feature Importance
 
-Compare machine learning model performance and visualize the strongest churn-driving features.
+# Objective
+Evaluate machine learning models for customer churn prediction and identify the most influential factors driving customer churn.
 
 # Models Evaluated
 1. Logistic Regression
 2. Logistic Regression + SMOTE
 3. Random Forest
 4. Random Forest + SMOTE
-5. XGBoost
-6. XGBoost + SMOTE
 
-# Key Components
-1. Best Model Accuracy KPI
-2. Best Model Precision KPI
-3. Best Model Recall KPI
-4. Best Model F1 Score KPI
-5. Total Models Evaluated KPI
-6. Final Model Comparison Visualization
-7. Recall Score Comparison
-8. Top Churn Drivers Visualization
-9. Feature Importance Analysis
+# Dashboard Components
+1. Best Accuracy KPI
+2. Best Precision KPI
+3. Best Recall KPI
+4. Best F1 Score KPI
+5. Models Evaluated KPI
+6. Model Accuracy Comparison
+7. Precision vs Recall Comparison
+8. F1 Score Comparison
+9. Top Churn Drivers Analysis
+10. Feature Importance Treemap
 
-# Final ML Results
-# Model	Accuracy	F1 Score
-1. Random Forest + SMOTE	83.6%	83.9%
-2. XGBoost + SMOTE	80.9%	81.7%
-3. Logistic + SMOTE	79.3%	80.3%
+# Final Model Results
 
-# Key ML Insights
-1. SMOTE balancing significantly improved recall performance
-2. Random Forest + SMOTE achieved best overall results
-3. MonthlyCharges, tenure, TotalCharges, and Contract were top churn-driving features
-4. ML feature importance aligned strongly with business dashboard insights
+| Model | Accuracy | Precision | Recall | F1 Score |
+|---------|---------|---------|---------|---------|
+| Random Forest + SMOTE | 83.6% | 82.0% | 85.6% | 83.9% |
+| Logistic + SMOTE | 79.3% | 77.0% | 85.0% | 80.3% |
+| Logistic Regression | 79.0% | 63.0% | 47.0% | 54.0% |
+| Random Forest | 79.0% | 63.0% | 47.0% | 54.0% |
+
+# Top Churn Drivers
+1. Monthly Charges
+2. Tenure
+3. Total Charges
+4. Contract Type
+5. Online Security
+6. Tech Support
+7. Payment Method
+
+# Key Insights
+1. SMOTE significantly improved model recall and churn detection.
+2. Random Forest + SMOTE achieved the best overall performance.
+3. Monthly Charges, Tenure, and Total Charges are the strongest churn predictors.
+4. Contract type and support-related services strongly influence customer retention.
+5. Feature importance findings align with business insights from previous dashboards.
+
+# Business Impact
+The dashboard enables stakeholders to:
+1. Compare ML model performance.
+2. Select the best churn prediction model.
+3. Understand key churn-driving factors.
+4. Support proactive customer retention strategies.
 
 # 🚀 Advanced Features Implemented
 # ✅ DAX Measures
