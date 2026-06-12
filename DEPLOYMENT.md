@@ -1,14 +1,13 @@
-# API Deployment
+## Docker Deployment
 
-Run API:
-
-uvicorn app:app --reload
-
-Swagger:
-http://127.0.0.1:8000/docs
-
-Docker Build:
+Build Docker Image:
 docker build -t customer-churn-api .
 
-Docker Run:
+Run Docker Container:
 docker run -p 8000:8000 customer-churn-api
+
+API Endpoint:
+http://localhost:8000
+
+Swagger Documentation:
+http://localhost:8000/docs
