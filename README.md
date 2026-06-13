@@ -1618,3 +1618,32 @@ A complete project presentation has been prepared covering:
 - Business Recommendations & Final Impact
 
 The presentation summarizes the complete analytics workflow and business outcomes of the project.
+
+# Docker Deployment
+
+## Docker Image Build
+Docker image successfully built using Docker Desktop.
+
+## Docker Container Execution
+FastAPI application deployed and executed inside Docker container.
+
+## Docker Hub
+Docker image pushed to Docker Hub repository:
+afzalrangrej/customer-churn-api:v1
+
+# Deployment Evidence
+
+## FastAPI & Swagger
+- API successfully deployed locally using FastAPI.
+- Swagger UI available for endpoint testing.
+
+## Docker Containerization
+- Docker image built successfully.
+- Container running on port 8000.
+
+## Docker Hub Deployment
+Docker image published to Docker Hub:
+
+afzalrangrej/customer-churn-api:v1
+
+
